@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import './Profile.css'
 const Profile = () => {
   return (
     <div className="profile-container">
@@ -21,12 +21,40 @@ const Profile = () => {
               <i className="fa fa-github-square"></i>
             </a>
 
-
             <a href="https://twitter.com/EstevezJaimes" target="_blank" rel="noreferrer">
               <i className="fa fa-twitter-square"></i>
             </a>
           </div>
+
+
+          <div className="profile-details-name">
+            <span className="primary-text">
+              {" "}
+              Hello, I'M <span className="highlighted-text">Leonardo</span>
+            </span>
+          </div>
+
+          <div className="profile-details-role">
+            <span className="primary-text">
+              {" "}
+              <h1>
+                
+              </h1>
+            </span>
+            <span className="profile-role-tagline">
+              Knack of building applications with front and back end operations.
+            </span>
+          </div>
+
+
         </div>
+
+        <div className="profile-picture">
+          <div className="profile-picture-background">
+
+          </div>
+        </div>
+
       </div>
     </div>
   );
