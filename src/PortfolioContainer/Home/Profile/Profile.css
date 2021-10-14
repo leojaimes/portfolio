@@ -1,12 +1,21 @@
 
 .profile-container {
+
+  background: url("../../../assets/images/Home/Header/bg.png"), #49A3D6 no-repeat;
+  position: relative;
+}
+.profile-glass {
+  
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
+  padding: 50px;
+  background-color:  rgba(0, 0, 0, 0.4);/*rgba(73, 163, 214, 0.0);*/
+  min-height: fit-content;
   align-items: center;
   text-align: center;
   justify-content: center;
-  height: 10%;
-  min-height: fit-content;
-  background-image: url("../../../assets/images/Home/Profile/bg.jpg");
 }
 .profile-parent {
   display: flex;
@@ -28,9 +37,10 @@
 }
 .primary-text {
   color: (--white);
+  line-height: 40px;
 }
 .highlighted-text {
-  color: #ff5823;
+  color: black;
 }
 .profile-role-tagline {
   font-size: 19px;
@@ -52,9 +62,9 @@
   justify-content: center;
   box-shadow: 0 1px 0px 0px var(--white);
   border-radius: 50%;
-  height: 380px;
-  width: 380px;
-  margin: 0 0px 0 100px;
+  height: 200px;
+  width: 200px;
+  
 }
 .profile-picture-background {
   height: 92%;
@@ -99,8 +109,8 @@
 @media only screen and (max-width: 910px) {
   .profile-picture {
     margin: 0 0 0 4px;
-    height: 320px;
-    width: 320px;
+    height: 200px;
+    width: 200px;
   }
 }
 @media only screen and (max-width: 810px) {
@@ -129,8 +139,8 @@
 
 @media only screen and (max-width: 375px) {
   .profile-picture {
-    height: 275px;
-    width: 275px;
+    height: 200px;
+    width: 200px;
     margin-top: -90px;
   }
   .proflie-details {

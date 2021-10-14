@@ -1,0 +1,46 @@
+.main .container-menu {
+  overflow: visible;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .acerca-de {
+  text-align: center;
+}
+
+.main .about-me .photo {
+  margin-top: -60px;
+}
+
+.main .about-me .photo img {
+  border-radius: 50%;
+  vertical-align: top;
+  border: 5px solid rgba(255, 255, 255, 0.2);
+}
+
+.main .about-me .text {
+  color: #5a5a5a;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 30px;
+  width: 80%;
+  margin: 40px auto 60px auto;
+}
+
+.main .about-me .text .title {
+  font-size: 34px;
+  margin-bottom: 40px;
+  line-height: 34px;
+  font-weight: 300;
+  color: #dd820d;
+  text-align: center;
+}
+
+.main .about-me .text .bold {
+  color: #3895ea;
+  text-decoration: underline;
+}
+ 

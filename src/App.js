@@ -1,12 +1,12 @@
 import React from 'react';
-import Profile from './PortfolioContainer/Home/Profile/Profile';
+import Home from './PortfolioContainer/Home/Home';
 //import PropTypes from 'prop-types';
-import './App.css'
+ import './App.css'
 const App = () => {
   return (
-    <div className="App">
-      <Profile />
-    </div>
+    
+      <Home />
+ 
   );
 }
  
