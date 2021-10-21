@@ -44,15 +44,15 @@ const Resume = (props) => {
 
   /* STATIC RESUME DATA FOR THE LABELS*/
   const resumeBullets = [
-    { label: "Education", logoSrc: "education.svg" },
     { label: "Work History", logoSrc: "work-history.svg" },
-    { label: "Programming Skills", logoSrc: "programming-skills.svg" },
     { label: "Projects", logoSrc: "projects.svg" },
+    { label: "Education", logoSrc: "education.svg" },
+    /*{ label: "Programming Skills", logoSrc: "programming-skills.svg" }, */
     { label: "Interests", logoSrc: "interests.svg" },
   ];
 
   //here we have
-  const programmingSkillsDetails = [
+  /*const programmingSkillsDetails = [
     { skill: "JavaScript", ratingPercentage: 85 },
     { skill: "React JS", ratingPercentage: 85 },
     { skill: "React Native", ratingPercentage: 85 },
@@ -62,112 +62,80 @@ const Resume = (props) => {
     { skill: "Core Java", ratingPercentage: 80 },
     { skill: "HTML", ratingPercentage: 80 },
     { skill: "CSS", ratingPercentage: 80 },
-  ];
+  ];*/
 
   const projectsDetails = [
     {
-      title: "Personal Portfolio Website",
-      duration: { fromDate: "2020", toDate: "2021" },
+      title: "Pepper Tix Page",
+      duration: { fromDate: "2018", toDate: "Actual" },
       description:
-        "A Personal Portfolio website to showcase all my details and projects at one place.",
-      subHeading: "Technologies Used: React JS, Bootsrap",
+        "A Web Application for tickets event sales.",
+      subHeading: "Technologies Used: Nuxt, Vuetify, Node JS Vuex",
     },
     {
-      title: "Mobile E-shop ",
-      duration: { fromDate: "2020", toDate: "2021" },
+      title: "Pepper Bot ",
+      duration: { fromDate: "2017", toDate: "Actual" },
       description:
-        "An ecommerce application designed to sell products online wth payment system integration",
+        "A chat for Facebook Messenger to ask questions about events and sale flow.",
       subHeading:
-        "Technologies Used:  React Native, Mongo DB, Express Js, Node Js, Redux.",
+        "Technologies Used: Mongo DB, Express Js, Node Js.",
     },
     {
-      title: "Ecommerce Website ",
-      duration: { fromDate: "2020", toDate: "2021" },
+      title: "Dashboard for Pepper Tix",
+      duration: { fromDate: "2021", toDate: "Actual" },
       description:
-        "Online ecommerce website for showcasing and selling products onlne with payment system integration, both Paypal and Stripe",
+        "Dashboard for creation events and  sales flow",
       subHeading:
-        "Technologies Used: Mongo DB, Epress Js, React Js, Node JS, Redux, Bootstrap.",
+        "Technologies Used: Mongo DB, Epress Js, React Js, Node JS, Redux",
     },
   ];
 
   const resumeDetails = [
-    <div className="resume-screen-container" key="education">
-      <ResumeHeading
-        heading={"University of Legon Accra, Ghana"}
-        subHeading={"BACHELOR OF SCIENCE INFORMATION TECHNOLOGY"}
-        fromDate={"2014"}
-        toDate={"2018"}
-      />
-
-      <ResumeHeading
-        heading={"National Youth Service Corps"}
-        subHeading={"Ministry Of Science And Technogy. Uyo Akwa Ibom State"}
-        fromDate={"2019"}
-        toDate={"2020"}
-      />
-      <ResumeHeading
-        heading={"High School "}
-        subHeading={"Command Secondary School Mbiri"}
-        fromDate={"2007"}
-        toDate={"2012"}
-      />
-    </div>,
-
-    /* WORK EXPERIENCE */
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
         <ResumeHeading
-          heading={"Ehizeex Technoloy"}
-          subHeading={"FULL STACK DEVELOPER INTERN"}
-          fromDate={"2021"}
+          heading={"Spotlight Sutdio"}
+          subHeading={"Web Application Developer"}
+          fromDate={"2017"}
           toDate={"Present"}
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            Currently working as MERN stack web and mobile developer and also an
-            online instructor on udemy.
+            Currently working as MEVN Nuxt stack web and Flutter mobile developer
           </span>
         </div>
         <div className="experience-description">
           <span className="resume-description-text">
-            - Developed an ecommerce website for client with the dashboard for
-            managing the products, managing reviews, users, payment etc. .
+            - Developed an online ticket sales application, searching, performers, cities, events, ticket groups, checkout with credit card and Paypal payment methods.
           </span>
           <br />
+
           <span className="resume-description-text">
-            - Integrated the web app with backend services to create new user
-            onboarding application with dynamic form content.{" "}
+            - Developed a chat bot integrated with Facebook Messenger API and Dialog Flow
           </span>
           <br />
+
+
           <span className="resume-description-text">
-            - I stretch my mental capacity to develope UI as per the given
-            designs.
+            - Developed Dashboard for events management
           </span>
           <br />
+
+
+
+
         </div>
       </div>
+
+
+
+
+
     </div>,
 
-    /* PROGRAMMING SKILLS */
-    <div
-      className="resume-screen-container programming-skills-container"
-      key="programming-skills"
-    >
-      {programmingSkillsDetails.map((skill, index) => (
-        <div className="skill-parent" key={index}>
-          <div className="heading-bullet"></div>
-          <span>{skill.skill}</span>
-          <div className="skill-percentage">
-            <div
-              style={{ width: skill.ratingPercentage + "%" }}
-              className="active-percentage-bar"
-            ></div>
-          </div>
-        </div>
-      ))}
-    </div>,
 
-    /* PROJECTS */
+
+
     <div className="resume-screen-container" key="projects">
       {projectsDetails.map((projectsDetails, index) => (
         <ResumeHeading
@@ -181,21 +149,44 @@ const Resume = (props) => {
       ))}
     </div>,
 
-    /* Interests */
+    <div className="resume-screen-container" key="education">
+      <ResumeHeading
+        heading={"Unidades Tecnológicas de Santander, Colombia"}
+        subHeading={"Telecommunications Engineer"}
+        fromDate={"2013"}
+        toDate={"2016"}
+      />
+
+      <ResumeHeading
+        heading={"SENA, Colombia"}
+        subHeading={"Technology in Analysis and Development of Information Systems"}
+        fromDate={"2003"}
+        toDate={"2005"}
+      />
+
+    </div>,
+
+
     <div className="resume-screen-container" key="interests">
       <ResumeHeading
-        heading="Teaching"
-        description="Apart from being a tech enthusiast and a code writer, i also love to teach people what i know simply because i believe in sharing."
-      />
-      <ResumeHeading
-        heading="Music"
-        description="Listening to soothing music is something i can never compromise with, skimming through Spotify's pop songs charts is at times the best stress reliever that i can get my hands on."
-      />
-      <ResumeHeading
         heading="Competitive Gaming"
-        description="I like to challenge my reflexes a lot while competing in football games, pushing the rank and having interactive gaming sessions excites me the most."
+        description="I like to challenge my reflexes a lot while competing in GW2, pushing the rank and having interactive gaming sessions excites me the most."
       />
+      <ResumeHeading
+        heading="Workout"
+        description="The feeling that one gets after a good workout is fantastic. This is due to the release of endorphins, hormones that makes me feel great. "
+      />
+
+      <ResumeHeading
+        heading="Learn new technologies"
+        description="The feeling that one gets after a good workout is fantastic. This is due to the release of endorphins, hormones that makes me feel great. "
+      />
+
     </div>,
+
+ 
+
+
   ];
 
   const handleCarousal = (index) => {
