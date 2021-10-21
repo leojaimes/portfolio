@@ -1,6 +1,6 @@
 import React from "react";
  import Profile from "./Profile/Profile";
-//import Footer from "./Footer/Footer";
+import Footer from "./Footer/Footer";
  import Header from "./Header/Header"; 
 
  
@@ -13,6 +13,7 @@ export default function Home(props) {
     <>
       <Header/>
       <Profile />
+      
        
     </>
   );

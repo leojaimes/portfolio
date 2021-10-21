@@ -3,6 +3,8 @@
   justify-content: center;
   height: 149px;
   color: var(--white);
+  background-color: #3B597A;
+  ;
 }
 .header-parent {
   display: flex;
