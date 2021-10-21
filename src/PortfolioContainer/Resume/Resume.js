@@ -179,7 +179,7 @@ const Resume = (props) => {
 
       <ResumeHeading
         heading="Learn new technologies"
-        description="The feeling that one gets after a good workout is fantastic. This is due to the release of endorphins, hormones that makes me feel great. "
+        description="I'm ready and willing to teach myself new things and practice my coding skills."
       />
 
     </div>,

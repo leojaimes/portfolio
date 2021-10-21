@@ -13,7 +13,11 @@ export default function AboutMe(props) {
 
   const SCREEN_CONSTSANTS = {
     description:
-      "Full stack web and mobile developer with background knowledge of MERN stacks with redux, along with a knack of building applications with utmost efficiency. Strong professional with a BSC willing to be an asset for an organization.",
+    `Programming professional with experience in managing databases (MongoDB, SQL Server) and
+    applications. Specialized in Web and Mobile Application development tools, such as MEVN / Nuxt Node
+    js and Flutter. Collaborator with excellent planning, communication and teamwork skills to build
+    excellent Applications that will be used by a large number of users.`,
+     // "Full stack web and mobile developer with background knowledge of MERN stacks with redux, along with a knack of building applications with utmost efficiency. Strong professional with a BSC willing to be an asset for an organization.",
     highlights: {
       bullets: [
         "Full Stack web MEVN/MERN",
